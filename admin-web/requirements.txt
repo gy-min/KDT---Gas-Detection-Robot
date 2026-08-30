@@ -1,0 +1,5 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+aiortc>=1.9        # 파이썬 WebRTC 구현 (av도 함께 설치됨)
+numpy>=1.26        # 플레이스홀더 프레임 생성
+pillow>=10.0       # /api/snapshot JPEG 저장

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android blocks plain-text (http/ws) traffic by default on API 28+. The test server has no
+  TLS certificate on its raw IP, so rather than allowing cleartext app-wide (which would also
+  weaken any future real HTTPS domain), this carves out an exception for just this one IP.
+
+  When the real server gets a domain name + HTTPS certificate, delete this file, remove the
+  android:networkSecurityConfig line from AndroidManifest.xml, and switch API_BASE_URL/WS_URL
+  in build.gradle.kts back to https:// / wss://.
+
+  This file is checked into git, so the real server IP is deliberately NOT written here (see
+  local.properties' `api.host`, which is gitignored). To build against the real server locally,
+  replace YOUR_SERVER_IP below with that value — must match API_BASE_URL/WS_URL exactly, or
+  cleartext requests to the real host will be blocked at the OS level instead of reaching it.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">YOUR_SERVER_IP</domain>
+    </domain-config>
+</network-security-config>

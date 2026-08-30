@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Warning triangle, kept inside the ~66dp adaptive-icon safe zone -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 L79,73 L29,73 Z" />
+    <!-- Exclamation mark, cut in the brand color so it reads on the white triangle -->
+    <path
+        android:fillColor="#1466A3"
+        android:pathData="M51,46 L57,46 L56,64 L52,64 Z" />
+    <path
+        android:fillColor="#1466A3"
+        android:pathData="M54,68 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

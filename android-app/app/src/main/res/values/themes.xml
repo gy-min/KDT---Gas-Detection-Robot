@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.GasRobotMonitor" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Emergency screen: allowed to draw over lock screen, no status/nav chrome -->
+    <style name="Theme.GasRobotMonitor.Emergency" parent="android:Theme.Material.NoActionBar.Fullscreen" />
+</resources>

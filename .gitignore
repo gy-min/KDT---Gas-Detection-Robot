@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node / web
+node_modules/
+dist/
+dist-ssr/
+
+# Env files (secrets)
+.env
+.env.local
+!.env.example
+
+# Android (also covered by android-app/.gitignore, kept here as a safety net)
+.gradle/
+.idea/
+build/
+local.properties
+*.iml
+
+# Editor / OS
+.vscode/
+.DS_Store
