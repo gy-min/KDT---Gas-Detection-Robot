@@ -45,5 +45,5 @@ React        Android(Kotlin)
 | 로봇 | 라즈베리파이: `python rpi_qr_navigator.py` / ESP32: `c_main.py` 업로드 |
 | 직원 앱 | Android Studio로 `android-app/` 열고 빌드 (서버 주소는 `local.properties`에서 설정) |
 
-> 메인 서버·화재감지 서버 실행 전에 MariaDB와 MQTT 브로커(Mosquitto)가 먼저 떠 있어야 합니다.
-> 서버 IP·비밀번호 등 실제 값은 공개 저장소라 코드에 없습니다 — 각 폴더 안내(주석/환경변수)를 참고해 로컬에 채워 넣으세요.
+> 메인 서버·화재감지 서버 실행 전에 MariaDB와 MQTT 브로커(Mosquitto)가 먼저 떠 있어야 함.
+> 서버 IP·비밀번호 등 실제 값은 로컬에서 채워 넣을 것 (각 폴더 주석/환경변수 참고).
